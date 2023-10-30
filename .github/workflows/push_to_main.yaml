@@ -35,7 +35,7 @@
           with:
             registry: ghcr.io
             username: ${{ github.actor }}
-            password: ${{ secrets.PACKPUB_SECRET }}
+            password: ${{ secrets.testtoken }}
         - name: Build and publish updated image
           run: |
             mvn package
